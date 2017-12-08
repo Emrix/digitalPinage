@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="title">computerName</h1>
+    <form action="fileupload" method="post" enctype="multipart/form-data">
+        <input type="file" name="filetoupload">
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+    <form action="setType" method="post" enctype="multipart/form-data">
+        <input type="radio" name="vidType" value="Online"> Online
+        <br>
+        <input type="radio" name="vidType" value="Local"> Local
+        <br>
+        <input type="radio" name="vidType" value="Slideshow"> Slideshow
+        <br>
+        <input type="submit" value="Set">
+    </form>
+    <a href="http://localhost:8080/player">Go to Player</a>
+    <script>
+    document.getElementById('title').innerHTML = location.hostname + " Control";
+    </script>
+</body>
+
+</html>
