@@ -1,7 +1,78 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <title>Digital Pinage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/resources/header.css"></link>
+</head>
+
 <body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h1>Digital Pinage</h1>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h2 id="title">computerName</h2>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="row">
+                <div class="col-lg-1 col-sm-4">
+                    <a href="/">Home</a>
+                </div>
+                <div class="col-lg-1 col-sm-4">
+                    <a href="/construction">Help</a>
+                </div>
+                <div class="col-lg-1 col-sm-4">
+                    <a href="/player">Preview</a>
+                </div>
+                <div class="col-lg-7 col-sm-4">
+                </div>
+                <div class="col-lg-1 col-sm-4">
+                    <a href="construction">Search</a>
+                </div>
+                <div class="col-lg-1 col-sm-4">
+                    <a href="construction">Unlock</a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="row" id="test">
+                <div class="col-2 sidebar">
+                    <p>Sidebar!</p>
+                </div>
+                <div class="col-10 content">
+                    <p>Main content!</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <ul>
+                            <li><a href="https://github.com/Emrix/digitalPinage">Get Updates</a></li>
+                            <li><a href="https://github.com/Emrix/digitalPinage/wiki">Documentation</a></li>
+                            <li><a href="https://github.com/Emrix/digitalPinage/issues/new">Report a bug</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <p>Created and maintained by Matt Ricks on Github</p>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li><a href="/termsconditions">Terms & Conditions</a></li>
+                            <li><a href="https://www.paypal.com/paypalme/MRicks/25">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--
     <h1 id="title">computerName</h1>
     <form action="fileupload" method="post" enctype="multipart/form-data">
         <input type="file" name="filetoupload">
@@ -18,9 +89,14 @@
         <input type="submit" value="Set">
     </form>
     <a href="http://localhost:8080/player">Go to Player</a>
-    <script>
-    document.getElementById('title').innerHTML = location.hostname + " Control";
-    </script>
+-->
+        <script>
+        document.getElementById('title').innerHTML = "Viewing: " + location.hostname;
+        </script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

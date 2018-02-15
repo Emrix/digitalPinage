@@ -18,7 +18,7 @@
                 playbackType = this.responseText;
             }
         };
-        xhttp.open("GET", "/ajax_info.txt", true);
+        xhttp.open("GET", "/videoType", true);
         xhttp.send();
         setTimeout(checkPlaybackType, 10000);
     }
@@ -77,13 +77,24 @@
 <body style="padding: 0; margin: 0; background-color: black">
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="https://cdn.wedding-spot.com/images/venues/7690/Stone-Gate-Weddings-and-Events-Wedding-Pleasant-Grove-WI-1_main.1454669153.jpg" style="width:100%; height:100%">
+            <img src="https://cdn.wedding-spot.com/images/venues/7690/Stone-Gate-Weddings-and-Events-Wedding-Pleasant-Grove-WI-1_main.1454669153.jpg" style="width:100vw; height:100vh">
         </div>
         <div class="mySlides fade">
-            <img src="http://ww1.prweb.com/prfiles/2013/12/30/11454497/IMG_1233.JPG" style="width:100%; height:100%">
+            <p>Check out our website!</p>
+            <iframe src="https://www.stonegateweddings.com/" style="width:100vw; height:100vh"></iframe>
         </div>
         <div class="mySlides fade">
-            <img src="https://wwcdn.weddingwire.com/vendor/515001_520000/515579/thumbnails/800x800_1383597098941-32.jpg" style="width:100%; height:100%">
+            <img src="http://ww1.prweb.com/prfiles/2013/12/30/11454497/IMG_1233.JPG" style="width:100vw; height:100vh">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://wwcdn.weddingwire.com/vendor/515001_520000/515579/thumbnails/800x800_1383597098941-32.jpg" style="width:100vw; height:100vh">
+        </div>
+        <div class="mySlides fade">
+            <video style="position: absolute; height: 100vh; width: 100vw; border: none" loop="true" width=100% height=100% autoplay="autoplay" src="http://localhost:8080/getVideo" type="vid
+            eo/mp4">
+        </div>
+        <div class="mySlides fade">
+            <iframe style="position: absolute; height: 100vh; width: 100vw; border: none" src="https://www.youtube.com/embed/VW4-wxIB1pA?controls=0&modestbranding&disablekb=1&iv_load_policy=3&playsinline=0&autoplay=1&showinfo=0&loop=1&rel=0&playlist=z51apErmAuw" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     <br>

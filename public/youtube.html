@@ -15,7 +15,7 @@ function checkPlaybackType() {
             playbackType = this.responseText;
         }
     };
-    xhttp.open("GET", "/ajax_info.txt", true);
+    xhttp.open("GET", "/videoType", true);
     xhttp.send();
     setTimeout(checkPlaybackType, 10000);
 }

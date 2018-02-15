@@ -1,0 +1,20 @@
+{
+    "title": "Default",
+    "date": "January 25th, 2017",
+    "time": "6:30 PM",
+    "slideshow": [
+    {
+        "title": "Welcome Slide",
+        "type": "youtube|video|picture|website|words",
+        "link": "http://www.stonegateweddings.com",
+        "transition": "fade",
+        "kenburns": "true/false"
+    },
+    {
+        "title": "Announcement 1 Slide",
+        "type": "youtube|video|picture|website",
+        "link": "http://www.stonegateweddings.com",
+        "transition": "fade",
+        "kenburns": "true/false"
+    }, ]
+}
